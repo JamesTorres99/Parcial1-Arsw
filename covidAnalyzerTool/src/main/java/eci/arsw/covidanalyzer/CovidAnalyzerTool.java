@@ -114,6 +114,7 @@ public class CovidAnalyzerTool {
        
         processingThread.start();
         
+        
         while(ThreadsTerminates.get() != canThilos){
         	Scanner scanner = new Scanner(System.in);
             String line = scanner.nextLine();

@@ -17,6 +17,7 @@ public class Result {
     private double testSpecifity;
     //</editor-fold>
 
+    
     //<editor-fold desc="getters">
     public UUID getId() {
         return id;
@@ -26,6 +27,7 @@ public class Result {
         return firstName;
     }
 
+    
     
     public String getLastName() {
         return lastName;
@@ -43,6 +45,7 @@ public class Result {
         return birthString;
     }
 
+    
     public String getTestDate() {
         return testString;
     }

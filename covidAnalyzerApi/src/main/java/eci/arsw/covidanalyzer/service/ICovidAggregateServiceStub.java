@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service("ICovidAggregateServiceStub")
 public class ICovidAggregateServiceStub implements ICovidAggregateService {
-    private List<Result> resultados;
+    private List<ResultType> resultados;
     private final HashMap<UUID,Integer> resul;
 
     public ICovidAggregateServiceStub ( ){
@@ -28,7 +28,7 @@ public class ICovidAggregateServiceStub implements ICovidAggregateService {
     @Override
     public  List<Result> getResult(ResultType type){
         List<Result> resultado= new ArrayList <Result>();
-        for (Result resul: resultados){
+        for (ResultType resul: resultados){
             if (resul.resultType(type)){
                 resultado.add(resul);
             }

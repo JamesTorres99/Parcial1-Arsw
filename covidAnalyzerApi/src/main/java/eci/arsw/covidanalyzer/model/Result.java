@@ -20,5 +20,6 @@ public class Result {
 public String toString(){
     return this.id.toString() + " - " + this.firstName + " - " + this.lastName;
 }
+
    
 }
