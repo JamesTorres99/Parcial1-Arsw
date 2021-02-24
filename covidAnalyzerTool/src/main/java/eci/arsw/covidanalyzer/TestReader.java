@@ -27,6 +27,7 @@ public class TestReader {
         ArrayList<Result> Results = new ArrayList<>();
         TimeZone tz = TimeZone.getTimeZone("UTC");
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'");
+       
         df.setTimeZone(tz);
 
         int count = 0;

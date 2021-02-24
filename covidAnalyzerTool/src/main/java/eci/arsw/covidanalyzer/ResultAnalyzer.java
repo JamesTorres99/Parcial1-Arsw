@@ -23,6 +23,7 @@ public class ResultAnalyzer {
             } else {
                 TestReporter.report(result, TestReporter.FALSE_POSITIVE);
             }
+            
         } else {
             if (result.getTestSpecifity() > MIN_TEST_SPECIFY) {
                 TestReporter.report(result, TestReporter.TRUE_NEGATIVE);
